@@ -1,26 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evgeniia Korolova - Front-end Developer</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="navbar">
-      <img src="./images/logo.svg" alt="logo">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#" class="nav-link active">Main</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-      </ul>
-    </div>
-  </header>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Evgeniia Korolova - Front-end Developer</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header container">
+			<div class="navbar">
+				<img src="./images/logo.svg" alt="logo" />
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Main</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Contacts</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<!-- ./header -->
+			<section class="promo container">
+				<img
+					class="promo-avatar"
+					src="./images/avatar.png"
+					alt="Evgeniia"
+					width="212"
+				/>
+				<div class="promo-wrapper">
+					<strong class="promo-strong">Hello! 👋</strong>
+					<h1 class="promo-heading">
+						<span class="accent">I am Frontend Developer</span>
+						<br />
+						My name is Evgeniia Korolova, I transform concepts into
+						beautiful, functional websites that inspire and engage.
+					</h1>
+					<div class="promo-links">
+						<ul class="soc1al-list">
+              <li class="soc1al-item">
+                <a href="www.linkedin.com/in/evgeniia-korolova-9923aa274" class="soc1al-link">
+                  <img src="./images/icons/linkedin.svg" alt="linkedin-icon" class="soc1al-logo" />
+                </a>
+              </li>
+              <li class="soc1al-item">
+                <a href="https://github.com/evgeniia-korolova" class="soc1al-link">
+                  <img src="./images/icons/github.svg" alt="github-icon" class="soc1al-logo" />
+                </a>
+              </li>
+              <li class="soc1al-item">
+                <a href="#" class="soc1al-link">
+                  <img src="./images/icons/telegram.svg" alt="telegram-icon" class="soc1al-logo" />
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="cv-download" download>
+              <img src="./images/icons/download.svg" alt="download-icon" class="download-icon">
+              <span class="sv-text">Download CV</span>
+            </a>
+					</div>
+				</div>
+			</section>
+			<!-- /.promo -->
+		</main>
+	</body>
 </html>

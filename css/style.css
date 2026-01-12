@@ -1,11 +1,26 @@
-bode {
+body {
 	font-family: 'Inter', sans-serif;
 }
 
-.header {
+:root {
+	--color-brand: #bf7506;
+	--color-dark: #1c1c1c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
 	max-width: 870px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.accent {
+	color: var(--color-brand);
 }
 
 .navbar {
@@ -13,6 +28,7 @@ bode {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-block: 1rem;
 }
 
 .nav-list {
@@ -25,12 +41,80 @@ bode {
 
 .nav-link {
 	text-decoration: none;
-	color: #bf7506;
+	color: var(--color-brand);
 	font-size: 16px;
 	line-height: 150%;
 }
 
 .nav-link.active {
 	font-weight: 700;
-  font-family: 'Inter', sans-serif;
+	font-family: 'Inter', sans-serif;
+}
+
+/* promo */
+
+.promo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 28px;
+	padding-bottom: 70px;
+}
+
+.promo-strong {
+	display: block;
+	font-size: 3rem;
+	line-height: 125%;
+	font-weight: 700;
+	margin-bottom: 1.2rem;
+}
+
+.promo-heading {
+	font-size: 1.5rem;
+	line-height: 135%;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	margin-bottom: 2rem;
+}
+
+.promo-links {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.soc1al-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.soc1al-link {
+	display: inline-block;
+	padding: 8px;
+}
+
+.cv-download {
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	text-decoration: none;
+	font-size: 1rem;
+	line-height: 150%;
+	font-weight: 700;
+	color: var(--color-dark);
+	border-bottom: 2px solid var(--color-brand);
+}
+
+
+
+@media (max-width: 600px) {
+	.promo {
+		flex-direction: column;
+		padding-block: 1.5rem;
+		padding-inline: 1rem;
+	}
 }
