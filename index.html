@@ -19,6 +19,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="./js/index.js" defer></script>
 	</head>
 	<body>
 		<header class="header container">
@@ -29,13 +30,13 @@
 						<a href="#" class="nav-link active">Main</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Projects</a>
+						<a href="#portfolio" class="nav-link">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">About Me</a>
+						<a href="#developer" class="nav-link">About Me</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Contacts</a>
+						<a href="#feedback" class="nav-link">Contacts</a>
 					</li>
 				</ul>
 			</div>
@@ -107,7 +108,7 @@
 			</section>
 			<!-- /.promo -->
 
-			<section class="portfolio">
+			<section class="portfolio" id="portfolio">
 				<div class="container portfolio-wrapper">
 					<h2 class="section-heading accent">Last Projects</h2>
 					<div class="cards">
@@ -216,7 +217,7 @@
 			</section>
 			<!-- /.portfolio -->
 
-			<section class="developer container">
+			<section class="developer container" id="developer">
 				<img
 					src="./images/photo.jpg"
 					alt="developer-photo"
@@ -248,8 +249,10 @@
 			</section>
 			<!-- /.developer container -->
 
-			<section class="skills container">
-				<h2 class="skills-title">Work with different languages and tools</h2>
+			<section class="skills container" id="skills">
+				<h2 class="skills-title">
+					Work with different languages and tools
+				</h2>
 				<ul class="tags">
 					<li class="tags-item">HTML</li>
 					<li class="tags-item">CSS</li>
@@ -257,7 +260,7 @@
 					<li class="tags-item">JS</li>
 					<li class="tags-item">TS</li>
 					<li class="tags-item">RxJs</li>
-					<li class="tags-item">Angular</li>					
+					<li class="tags-item">Angular</li>
 					<li class="tags-item">Signal Store</li>
 					<li class="tags-item">Angular Material</li>
 					<li class="tags-item">Tailwind</li>
@@ -267,25 +270,44 @@
 			</section>
 			<!-- /.skills -->
 
-			<section class="feedback container">
-				<h2 class="feedback-title">Ready to discuss your project...</h2>
-				<form action="" class="feedback-form">
-					<div class="form-field">
-						<label for="userName" class="input-label">Name</label>
-						<input id="userName" type="text" class="input">
-					</div>
-					<div class="form-field">
-						<label for="userEmail" class="input-label">Email</label>
-						<input id="userEmail" type="email" class="input">
-					</div>
-					<div class="form-field">
-						<label for="userMessage" class="input-label">Message</label>
-						<textarea id="userMessage" cols="30" rows="10" class="input">
+			<section class="feedback container" id="feedback">
+				<img
+					src="./images/hand.png"
+					alt="hand"
+					class="feedback-hand"
+				/>
+				<div class="feedback-wrapper">
+					<h2 class="feedback-title">
+						Ready to discuss your project...
+					</h2>
+					<form action="" class="feedback-form">
+						<div class="form-field">
+							<label for="userName" class="input-label">Name</label>
+							<input id="userName" name="client_name" type="text" class="input" />
+						</div>
+						<div class="form-field">
+							<label for="userEmail" class="input-label">Email</label>
+							<input id="userEmail" name="client_email" type="email" class="input" />
+						</div>
+						<div class="form-field">
+							<label for="userMessage" class="input-label"
+								>Message</label
+							>
+							<textarea
+								id="userMessage"
+								cols="30"
+								rows="10"
+								class="input"
+								name="client_message"
+							>
+							</textarea>
+						</div>
 
-						</textarea>
-					</div>
-
-					<button type="submit" class="cv-download submit-btn" download>
+						<button
+							type="submit"
+							class="cv-download submit-btn"
+							download
+						>
 							<img
 								src="./images/icons/send.svg"
 								alt="send-icon"
@@ -293,7 +315,8 @@
 							/>
 							<span class="sv-text">Send</span>
 						</button>
-				</form>
+					</form>
+				</div>
 			</section>
 			<!-- /.feedback container -->
 		</main>
