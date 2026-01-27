@@ -28,6 +28,11 @@ body {
 	line-height: 125%;
 	font-weight: 700;
 	letter-spacing: -0.03em;
+	margin-bottom: 1rem;
+}
+
+.hidden {
+	display: none;
 }
 
 @media (max-width: 768px) {
@@ -58,10 +63,13 @@ body {
 	color: var(--color-brand);
 	font-size: 16px;
 	line-height: 150%;
+	padding-bottom: .5rem;
+	border-bottom: 2px solid transparent;
 }
 
 .nav-link.active {
 	font-weight: 700;
+	border-bottom: 2px solid var(--color-brand);
 	font-family: 'Inter', sans-serif;
 }
 
@@ -414,6 +422,7 @@ body {
 	border-bottom: 3px solid var(--color-brand);
 	padding: 8px;
 	align-self: flex-end;
+	cursor: pointer;
 }
 
 @media (max-width: 1024px) {

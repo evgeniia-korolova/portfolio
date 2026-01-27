@@ -1,34 +1,33 @@
-"use strict";
+'use strict';
 
-const ajaxSend = async (formData) => {
-  
-  const fetchResp = await fetch("telegram.php", {
-    
-    method: "POST", 
-    body: formData, 
-  });
-  if (!fetchResp.ok) {
-    
-    throw new Error(`Error at: telegram.php, status ${fetchResp.status}`); 
-  }
-  return await fetchResp.text(); 
+const navBtn = document.querySelectorAll('.nav-link');
+const sectionView = document.querySelectorAll('.section-view');
+
+console.log(sectionView);
+
+const changeContent = (array, value) => {
+	array.forEach((elem) => {
+		if (elem.dataset.tabsField === value) {
+			elem.classList.remove('hidden');
+		} else {
+			elem.classList.add('hidden');
+		}
+	});
 };
 
-const forms = document.querySelectorAll("form"); 
-forms.forEach((form) => {
-  
-  form.addEventListener("submit", function (e) {
-    
-    e.preventDefault(); 
-    const formData = new FormData(this); 
-    console.log(formData);
+navBtn.forEach((btn) => {
+	btn.addEventListener('click', (event) => {
+		const tabValue = btn.dataset.tabsHandler;
+		console.log(tabValue);
 
-    ajaxSend(formData) 
-      .then((response) => {
-        
-        this.innerHTML = "Thank you,<br> for your message!"; 
-        form.reset(); 
-      })
-      .catch((err) => console.error(err)); 
-  });
+		changeContent(sectionView, tabValue);
+
+		navBtn.forEach((btn) => {
+			if (btn === event.target) {
+				btn.classList.add('active');
+			} else {
+				btn.classList.remove('active');
+			}
+		});
+	});
 });

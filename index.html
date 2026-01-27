@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -19,6 +19,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="./js/main.js" defer></script>
 		<script src="./js/index.js" defer></script>
 	</head>
 	<body>
@@ -26,17 +27,17 @@
 			<div class="navbar">
 				<img src="./images/logo.svg" alt="logo" />
 				<ul class="nav-list">
-					<li class="nav-item">
-						<a href="#" class="nav-link active">Main</a>
+					<li class="nav-item ">
+						<a href="#" class="nav-link active" data-tabs-handler="main">Main</a>
 					</li>
-					<li class="nav-item">
-						<a href="#portfolio" class="nav-link">Projects</a>
+					<li class="nav-item" >
+						<a href="#" class="nav-link" data-tabs-handler="projects">Projects</a>
 					</li>
-					<li class="nav-item">
-						<a href="#developer" class="nav-link">About Me</a>
+					<li class="nav-item" >
+						<a href="#" class="nav-link" data-tabs-handler="developer">About Me</a>
 					</li>
-					<li class="nav-item">
-						<a href="#feedback" class="nav-link">Contacts</a>
+					<li class="nav-item" >
+						<a href="#" class="nav-link" data-tabs-handler="contacts">Contacts</a>
 					</li>
 				</ul>
 			</div>
@@ -44,71 +45,82 @@
 
 		<main>
 			<!-- ./header -->
-			<section class="promo container">
-				<img
-					class="promo-avatar"
-					src="./images/avatar.png"
-					alt="Evgeniia"
-					width="212"
-				/>
-				<div class="promo-wrapper">
-					<strong class="promo-strong">Hello! 👋</strong>
-					<h1 class="promo-heading">
-						<span class="accent">I am Frontend Developer</span>
-						<br />
-						My name is Evgeniia Korolova, I transform concepts into
-						beautiful, functional websites that inspire and engage.
-					</h1>
-					<div class="promo-links">
-						<ul class="soc1al-list">
-							<li class="soc1al-item">
-								<a
-									href="www.linkedin.com/in/evgeniia-korolova-9923aa274"
-									class="soc1al-link"
-								>
-									<img
-										src="./images/icons/linkedin.svg"
-										alt="linkedin-icon"
-										class="soc1al-logo"
-									/>
-								</a>
-							</li>
-							<li class="soc1al-item">
-								<a
-									href="https://github.com/evgeniia-korolova"
-									class="soc1al-link"
-								>
-									<img
-										src="./images/icons/github.svg"
-										alt="github-icon"
-										class="soc1al-logo"
-									/>
-								</a>
-							</li>
-							<li class="soc1al-item">
-								<a href="#" class="soc1al-link">
-									<img
-										src="./images/icons/telegram.svg"
-										alt="telegram-icon"
-										class="soc1al-logo"
-									/>
-								</a>
-							</li>
-						</ul>
-						<a href="#" class="cv-download" download>
-							<img
-								src="./images/icons/download.svg"
-								alt="download-icon"
-								class="download-icon"
-							/>
-							<span class="sv-text">Download CV</span>
-						</a>
+			<section class="section-view" data-tabs-field="main">
+				<div class="container promo">
+					<img
+						class="promo-avatar"
+						src="./images/avatar.png"
+						alt="Evgeniia"
+						width="212"
+					/>
+					<div class="promo-wrapper">
+						<strong class="promo-strong">Hello! 👋</strong>
+						<h1 class="promo-heading">
+							<span class="accent">I am Frontend Developer</span>
+							<br />
+							My name is Evgeniia Korolova, I transform concepts into
+							beautiful, functional websites that inspire and engage.
+						</h1>
+						<div class="promo-links">
+							<ul class="soc1al-list">
+								<li class="soc1al-item">
+									<a
+										href="www.linkedin.com/in/evgeniia-korolova-9923aa274"
+										class="soc1al-link"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<img
+											src="./images/icons/linkedin.svg"
+											alt="linkedin-icon"
+											class="soc1al-logo"
+										/>
+									</a>
+								</li>
+								<li class="soc1al-item">
+									<a
+										href="https://github.com/evgeniia-korolova"
+										class="soc1al-link"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<img
+											src="./images/icons/github.svg"
+											alt="github-icon"
+											class="soc1al-logo"
+										/>
+									</a>
+								</li>
+								<li class="soc1al-item">
+									<a
+										href="https://t.me/Evgeniia_ods"
+										class="soc1al-link"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<img
+											src="./images/icons/telegram.svg"
+											alt="telegram-icon"
+											class="soc1al-logo"
+										/>
+									</a>
+								</li>
+							</ul>
+							<a href="#" class="cv-download" download>
+								<img
+									src="./images/icons/download.svg"
+									alt="download-icon"
+									class="download-icon"
+								/>
+								<span class="sv-text">Download CV</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
 			<!-- /.promo -->
 
-			<section class="portfolio" id="portfolio">
+			<section class="portfolio section-view hidden" data-tabs-field="projects">
 				<div class="container portfolio-wrapper">
 					<h2 class="section-heading accent">Last Projects</h2>
 					<div class="cards">
@@ -217,105 +229,121 @@
 			</section>
 			<!-- /.portfolio -->
 
-			<section class="developer container" id="developer">
-				<img
-					src="./images/photo.jpg"
-					alt="developer-photo"
-					class="developer-photo"
-				/>
-				<div class="developer-about">
-					<span class="developer-greeting">Glad to Meet You 😊</span>
-					<h2 class="developer-title accent">
-						I'm Evgeniia Korolova
-					</h2>
-					<p class="developer-text">
-						I create sites for people and companies
-					</p>
-					<span class="developer-motto accent">
-						Flexible, Reliable, Modern
-					</span>
-					<p class="developer-text">
-						Need a website for your company? I work with Figma, HTML,
-						CSS, JavaScript, and Angular to create responsive,
-						user‑friendly pages that can be launched in a short
-						timeframe without compromising quality.
-					</p>
+			<section class="section-view hidden" data-tabs-field="developer">
+				<div class="container developer">
 					<img
-						src="./images/signature.png"
-						alt="signature: Evgeniia Korolova"
-						class="developer-signature"
+						src="./images/photo.jpg"
+						alt="developer-photo"
+						class="developer-photo"
 					/>
+					<div class="developer-about">
+						<span class="developer-greeting"
+							>Glad to Meet You 😊</span
+						>
+						<h2 class="developer-title accent">
+							I'm Evgeniia Korolova
+						</h2>
+						<p class="developer-text">
+							I create sites for people and companies
+						</p>
+						<span class="developer-motto accent">
+							Flexible, Reliable, Modern
+						</span>
+						<p class="developer-text">
+							Need a website for your company? I work with Figma,
+							HTML, CSS, JavaScript, and Angular to create responsive,
+							user‑friendly pages that can be launched in a short
+							timeframe without compromising quality.
+						</p>
+						<img
+							src="./images/signature.png"
+							alt="signature: Evgeniia Korolova"
+							class="developer-signature"
+						/>
+					</div>
+				</div>
+				<div class="container skills">
+					<h2 class="skills-title">
+						Work with different languages and tools
+					</h2>
+					<ul class="tags">
+						<li class="tags-item">HTML</li>
+						<li class="tags-item">CSS</li>
+						<li class="tags-item">SCSS</li>
+						<li class="tags-item">JS</li>
+						<li class="tags-item">TS</li>
+						<li class="tags-item">RxJs</li>
+						<li class="tags-item">Angular</li>
+						<li class="tags-item">Signal Store</li>
+						<li class="tags-item">Angular Material</li>
+						<li class="tags-item">Tailwind</li>
+						<li class="tags-item">Figma</li>
+						<li class="tags-item">Git</li>
+					</ul>
 				</div>
 			</section>
-			<!-- /.developer container -->
+			<!-- /.developer container -->			
 
-			<section class="skills container" id="skills">
-				<h2 class="skills-title">
-					Work with different languages and tools
-				</h2>
-				<ul class="tags">
-					<li class="tags-item">HTML</li>
-					<li class="tags-item">CSS</li>
-					<li class="tags-item">SCSS</li>
-					<li class="tags-item">JS</li>
-					<li class="tags-item">TS</li>
-					<li class="tags-item">RxJs</li>
-					<li class="tags-item">Angular</li>
-					<li class="tags-item">Signal Store</li>
-					<li class="tags-item">Angular Material</li>
-					<li class="tags-item">Tailwind</li>
-					<li class="tags-item">Figma</li>
-					<li class="tags-item">Git</li>
-				</ul>
-			</section>
-			<!-- /.skills -->
+			<section class="section-view hidden" data-tabs-field="contacts">
+				<div class="container feedback">
+					<img
+						src="./images/hand.png"
+						alt="hand"
+						class="feedback-hand"
+					/>
+					<div class="feedback-wrapper">
+						<h2 class="feedback-title">
+							Ready to discuss your project...
+						</h2>
+						<form action="" class="feedback-form" id="feedback-form">
+							<div class="form-field">
+								<label for="userName" class="input-label">Name</label>
+								<input
+									id="userName"
+									name="client_name"
+									type="text"
+									class="input"
+								/>
+							</div>
+							<div class="form-field">
+								<label for="userEmail" class="input-label"
+									>Email</label
+								>
+								<input
+									id="userEmail"
+									name="client_email"
+									type="email"
+									class="input"
+								/>
+							</div>
+							<div class="form-field">
+								<label for="userMessage" class="input-label"
+									>Message</label
+								>
+								<textarea
+									id="userMessage"
+									cols="30"
+									rows="10"
+									class="input"
+									name="client_message"
+								>
+								</textarea>
+							</div>
 
-			<section class="feedback container" id="feedback">
-				<img
-					src="./images/hand.png"
-					alt="hand"
-					class="feedback-hand"
-				/>
-				<div class="feedback-wrapper">
-					<h2 class="feedback-title">
-						Ready to discuss your project...
-					</h2>
-					<form action="" class="feedback-form" id="contactForm">
-						<div class="form-field">
-							<label for="userName" class="input-label">Name</label>
-							<input id="userName" name="client_name" type="text" class="input" />
-						</div>
-						<div class="form-field">
-							<label for="userEmail" class="input-label">Email</label>
-							<input id="userEmail" name="client_email" type="email" class="input" />
-						</div>
-						<div class="form-field">
-							<label for="userMessage" class="input-label"
-								>Message</label
+							<button
+								type="submit"
+								class="cv-download submit-btn"
+								download
 							>
-							<textarea
-								id="userMessage"
-								cols="30"
-								rows="10"
-								class="input"
-								name="client_message"
-							>
-							</textarea>
-						</div>
-
-						<button
-							type="submit"
-							class="cv-download submit-btn"
-							download
-						>
-							<img
-								src="./images/icons/send.svg"
-								alt="send-icon"
-								class="download-icon"
-							/>
-							<span class="sv-text">Send</span>
-						</button>
-					</form>
+								<img
+									src="./images/icons/send.svg"
+									alt="send-icon"
+									class="download-icon"
+								/>
+								<span class="sv-text">Send</span>
+							</button>
+						</form>
+					</div>
 				</div>
 			</section>
 			<!-- /.feedback container -->
