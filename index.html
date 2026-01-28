@@ -21,37 +21,43 @@
 		/>
 		<script src="./js/tabs.js" defer></script>
 		<script src="./js/modal.js" defer></script>
+		<script src="./js/menu.js" defer></script>
 		<script src="./js/index.js" defer></script>
 	</head>
 	<body>
 		<header class="header container">
 			<div class="navbar">
 				<img src="./images/logo.svg" alt="logo" />
-				<ul class="nav-list">
-					<li class="nav-item">
-						<a
-							href="#"
-							class="nav-link active"
-							data-tabs-handler="main"
-							>Main</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link" data-tabs-handler="projects"
-							>Projects</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link" data-tabs-handler="developer"
-							>About Me</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link" data-tabs-handler="contacts"
-							>Contacts</a
-						>
-					</li>
-				</ul>
+				<nav class="menu">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link active"
+								data-tabs-handler="main"
+								>Main</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-tabs-handler="projects"
+								>Projects</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-tabs-handler="developer"
+								>About Me</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-tabs-handler="contacts"
+								>Contacts</a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<button class="humburger-menu" aria-label="Бургер меню">
+				</button>
 			</div>
 		</header>
 
