@@ -19,7 +19,8 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="./js/main.js" defer></script>
+		<script src="./js/tabs.js" defer></script>
+		<script src="./js/modal.js" defer></script>
 		<script src="./js/index.js" defer></script>
 	</head>
 	<body>
@@ -27,17 +28,28 @@
 			<div class="navbar">
 				<img src="./images/logo.svg" alt="logo" />
 				<ul class="nav-list">
-					<li class="nav-item ">
-						<a href="#" class="nav-link active" data-tabs-handler="main">Main</a>
+					<li class="nav-item">
+						<a
+							href="#"
+							class="nav-link active"
+							data-tabs-handler="main"
+							>Main</a
+						>
 					</li>
-					<li class="nav-item" >
-						<a href="#" class="nav-link" data-tabs-handler="projects">Projects</a>
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-tabs-handler="projects"
+							>Projects</a
+						>
 					</li>
-					<li class="nav-item" >
-						<a href="#" class="nav-link" data-tabs-handler="developer">About Me</a>
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-tabs-handler="developer"
+							>About Me</a
+						>
 					</li>
-					<li class="nav-item" >
-						<a href="#" class="nav-link" data-tabs-handler="contacts">Contacts</a>
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-tabs-handler="contacts"
+							>Contacts</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -120,7 +132,10 @@
 			</section>
 			<!-- /.promo -->
 
-			<section class="portfolio section-view hidden" data-tabs-field="projects">
+			<section
+				class="portfolio section-view hidden"
+				data-tabs-field="projects"
+			>
 				<div class="container portfolio-wrapper">
 					<h2 class="section-heading accent">Last Projects</h2>
 					<div class="cards">
@@ -229,7 +244,10 @@
 			</section>
 			<!-- /.portfolio -->
 
-			<section class="section-view hidden" data-tabs-field="developer">
+			<section
+				class="section-view hidden"
+				data-tabs-field="developer"
+			>
 				<div class="container developer">
 					<img
 						src="./images/photo.jpg"
@@ -282,67 +300,275 @@
 					</ul>
 				</div>
 			</section>
-			<!-- /.developer container -->			
+			<!-- /.developer container -->
 
-			<section class="section-view hidden" data-tabs-field="contacts">
-				<div class="container feedback">
-					<img
-						src="./images/hand.png"
-						alt="hand"
-						class="feedback-hand"
-					/>
-					<div class="feedback-wrapper">
-						<h2 class="feedback-title">
-							Ready to discuss your project...
-						</h2>
-						<form action="" class="feedback-form" id="feedback-form">
-							<div class="form-field">
-								<label for="userName" class="input-label">Name</label>
-								<input
-									id="userName"
-									name="client_name"
-									type="text"
-									class="input"
-								/>
-							</div>
-							<div class="form-field">
-								<label for="userEmail" class="input-label"
-									>Email</label
+			<section
+				class="section-view contacts-wrapper hidden"
+				data-tabs-field="contacts"
+			>
+				<div class="modal hidden">
+					<div class="overlay"></div>
+					<div class="modal-wrapper">
+						<div class="feedback">
+							<img
+								src="./images/hand.png"
+								alt="hand"
+								class="feedback-hand"
+							/>
+							<div class="feedback-wrapper">
+								<h2 class="feedback-title">
+									Ready to discuss your project...
+								</h2>
+							<button type="button" class="modal__close" aria-label="close modal"></button>
+								<form
+									action=""
+									class="feedback-form"
+									id="feedback-form"
 								>
-								<input
-									id="userEmail"
-									name="client_email"
-									type="email"
-									class="input"
-								/>
-							</div>
-							<div class="form-field">
-								<label for="userMessage" class="input-label"
-									>Message</label
-								>
-								<textarea
-									id="userMessage"
-									cols="30"
-									rows="10"
-									class="input"
-									name="client_message"
-								>
-								</textarea>
-							</div>
+									<div class="form-field">
+										<label for="userName" class="input-label"
+											>Name</label
+										>
+										<input
+											id="userName"
+											name="client_name"
+											type="text"
+											class="input"
+										/>
+									</div>
+									<div class="form-field">
+										<label for="userEmail" class="input-label"
+											>Email</label
+										>
+										<input
+											id="userEmail"
+											name="client_email"
+											type="email"
+											class="input"
+										/>
+									</div>
+									<div class="form-field">
+										<label for="userMessage" class="input-label"
+											>Message</label
+										>
+										<textarea
+											id="userMessage"
+											cols="30"
+											rows="10"
+											class="input"
+											name="client_message"
+										>
+										</textarea>
+									</div>
 
-							<button
-								type="submit"
-								class="cv-download submit-btn"
-								download
-							>
-								<img
-									src="./images/icons/send.svg"
-									alt="send-icon"
-									class="download-icon"
-								/>
-								<span class="sv-text">Send</span>
-							</button>
-						</form>
+									<button
+										type="submit"
+										class="cv-download submit-btn"
+										download
+									>
+										<img
+											src="./images/icons/send.svg"
+											alt="send-icon"
+											class="download-icon"
+										/>
+										<span class="sv-text">Send</span>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container contacts">
+					<h2 class="contacts-title section-heading accent">
+						Let’s build something great together
+					</h2>
+					<p class="contacts-subtitle">
+						Reach out via your preferred platform
+					</p>
+
+					<div class="contacts-content">
+						<!-- Левая колонка: контакты -->
+						<div class="contacts-links">
+							<ul class="contacts-list">
+								<li>
+									<a href="mailto:jkod@ukr.net" class="contact-link">
+										<!-- Email icon -->
+										<svg
+											fill="#bf7506"
+											width="24px"
+											height="24px"
+											viewBox="0 0 1920 1920"
+											xmlns="http://www.w3.org/2000/svg"
+											stroke="#bf7506"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z"
+													fill-rule="evenodd"
+												></path>
+											</g>
+										</svg>
+
+										jkod@ukr.net
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://t.me/Evgeniia_ods"
+										class="contact-link"
+									>
+										<!-- Telegram icon -->
+										<svg
+											fill="#bf7506"
+											width="24px"
+											height="24px"
+											viewBox="0 0 32 32"
+											xmlns="http://www.w3.org/2000/svg"
+											stroke="#bf7506"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M 26.070313 3.996094 C 25.734375 4.011719 25.417969 4.109375 25.136719 4.21875 L 25.132813 4.21875 C 24.847656 4.332031 23.492188 4.902344 21.433594 5.765625 C 19.375 6.632813 16.703125 7.757813 14.050781 8.875 C 8.753906 11.105469 3.546875 13.300781 3.546875 13.300781 L 3.609375 13.277344 C 3.609375 13.277344 3.25 13.394531 2.875 13.652344 C 2.683594 13.777344 2.472656 13.949219 2.289063 14.21875 C 2.105469 14.488281 1.957031 14.902344 2.011719 15.328125 C 2.101563 16.050781 2.570313 16.484375 2.90625 16.722656 C 3.246094 16.964844 3.570313 17.078125 3.570313 17.078125 L 3.578125 17.078125 L 8.460938 18.722656 C 8.679688 19.425781 9.949219 23.597656 10.253906 24.558594 C 10.433594 25.132813 10.609375 25.492188 10.828125 25.765625 C 10.933594 25.90625 11.058594 26.023438 11.207031 26.117188 C 11.265625 26.152344 11.328125 26.179688 11.390625 26.203125 C 11.410156 26.214844 11.429688 26.21875 11.453125 26.222656 L 11.402344 26.210938 C 11.417969 26.214844 11.429688 26.226563 11.441406 26.230469 C 11.480469 26.242188 11.507813 26.246094 11.558594 26.253906 C 12.332031 26.488281 12.953125 26.007813 12.953125 26.007813 L 12.988281 25.980469 L 15.871094 23.355469 L 20.703125 27.0625 L 20.8125 27.109375 C 21.820313 27.550781 22.839844 27.304688 23.378906 26.871094 C 23.921875 26.433594 24.132813 25.875 24.132813 25.875 L 24.167969 25.785156 L 27.902344 6.65625 C 28.007813 6.183594 28.035156 5.742188 27.917969 5.3125 C 27.800781 4.882813 27.5 4.480469 27.136719 4.265625 C 26.769531 4.046875 26.40625 3.980469 26.070313 3.996094 Z M 25.96875 6.046875 C 25.964844 6.109375 25.976563 6.101563 25.949219 6.222656 L 25.949219 6.234375 L 22.25 25.164063 C 22.234375 25.191406 22.207031 25.25 22.132813 25.308594 C 22.054688 25.371094 21.992188 25.410156 21.667969 25.28125 L 15.757813 20.75 L 12.1875 24.003906 L 12.9375 19.214844 C 12.9375 19.214844 22.195313 10.585938 22.59375 10.214844 C 22.992188 9.84375 22.859375 9.765625 22.859375 9.765625 C 22.886719 9.3125 22.257813 9.632813 22.257813 9.632813 L 10.082031 17.175781 L 10.078125 17.15625 L 4.242188 15.191406 L 4.242188 15.1875 C 4.238281 15.1875 4.230469 15.183594 4.226563 15.183594 C 4.230469 15.183594 4.257813 15.171875 4.257813 15.171875 L 4.289063 15.15625 L 4.320313 15.144531 C 4.320313 15.144531 9.53125 12.949219 14.828125 10.71875 C 17.480469 9.601563 20.152344 8.476563 22.207031 7.609375 C 24.261719 6.746094 25.78125 6.113281 25.867188 6.078125 C 25.949219 6.046875 25.910156 6.046875 25.96875 6.046875 Z"
+												></path>
+											</g>
+										</svg>
+
+										Telegram
+									</a>
+								</li>
+								<li>
+									<a
+										href="www.linkedin.com/in/evgeniia-korolova-9923aa274"
+										class="contact-link"
+									>
+										<!-- LinkedIn icon -->
+										<svg
+											width="16px"
+											height="16px"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="#bf7506"
+											stroke="#bf7506"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												<g>
+													<path
+														d="M2.5 18h3V6.9h-3V18zM4 2c-1 0-1.8.8-1.8 1.8S3 5.6 4 5.6s1.8-.8 1.8-1.8S5 2 4 2zm6.6 6.6V6.9h-3V18h3v-5.7c0-3.2 4.1-3.4 4.1 0V18h3v-6.8c0-5.4-5.7-5.2-7.1-2.6z"
+													></path>
+												</g>
+											</g>
+										</svg>
+
+										LinkedIn
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://github.com/evgeniia-korolova"
+										class="contact-link"
+									>
+										<!-- GitHub icon -->
+										<svg
+											width="24px"
+											height="24px"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											stroke="#bf7506"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke="CCCCCC"
+												stroke-width="0.048"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z"
+													fill=""
+												></path>
+											</g>
+										</svg>
+
+										GitHub
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://discordapp.com/users/1121027417973198899"
+										class="contact-link"
+									>
+										<!-- Discord icon -->
+										<svg
+											fill="#bf7506"
+											width="24px"
+											height="24px"
+											viewBox="0 0 24 24"
+											xmlns="http://www.w3.org/2000/svg"
+											xml:space="preserve"
+											stroke="#bf7506"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M18.942 5.556a16.299 16.299 0 0 0-4.126-1.297c-.178.321-.385.754-.529 1.097a15.175 15.175 0 0 0-4.573 0 11.583 11.583 0 0 0-.535-1.097 16.274 16.274 0 0 0-4.129 1.3c-2.611 3.946-3.319 7.794-2.965 11.587a16.494 16.494 0 0 0 5.061 2.593 12.65 12.65 0 0 0 1.084-1.785 10.689 10.689 0 0 1-1.707-.831c.143-.106.283-.217.418-.331 3.291 1.539 6.866 1.539 10.118 0 .137.114.277.225.418.331-.541.326-1.114.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595c.415-4.396-.709-8.209-2.973-11.589zM8.678 14.813c-.988 0-1.798-.922-1.798-2.045s.793-2.047 1.798-2.047 1.815.922 1.798 2.047c.001 1.123-.793 2.045-1.798 2.045zm6.644 0c-.988 0-1.798-.922-1.798-2.045s.793-2.047 1.798-2.047 1.815.922 1.798 2.047c0 1.123-.793 2.045-1.798 2.045z"
+												></path>
+											</g>
+										</svg>
+
+										Discord
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Правая колонка: карта -->
+						<div class="contacts-geo">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.5783834159!2d30.711787500000003!3d46.459972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1769607414911!5m2!1sru!2sua"
+								width="600"
+								height="450"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+						</div>
+					</div>
+
+					<!-- Кнопка для модального окна -->
+					<div class="contacts-footer">
+						<button class="contact-btn" id="openModal">
+							Contact me or drop me a message
+						</button>
 					</div>
 				</div>
 			</section>
