@@ -1,6 +1,6 @@
 "use strict";
 
-document.getElementById("contactForm").addEventListener("submit", async function (e) {
+document.getElementById("feedback-form").addEventListener("submit", async function (e) {
   e.preventDefault();
 
   const formData = new FormData(this);

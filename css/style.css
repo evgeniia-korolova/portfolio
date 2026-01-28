@@ -224,6 +224,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	background: #fcf9f5;
+	position: relative;
+	overflow: hidden;
 }
 
 .card-image {
@@ -248,7 +250,6 @@ body {
 	font-size: 16px;
 	line-height: 150%;
 	font-weight: 400;
-	margin-bottom: 16px;
 }
 
 .tags {
@@ -268,6 +269,11 @@ body {
 	border-radius: 4px;
 }
 
+.actions-wrapper {
+	margin-top: auto;
+	padding-bottom: 1rem;
+}
+
 .card-buttons {
 	display: flex;
 	align-items: center;
@@ -282,6 +288,70 @@ body {
 	text-decoration: none;
 	color: var(--color-dark);
 	border-bottom: 2px solid var(--color-brand);
+}
+
+.feature__link {
+	color: var(--color-brand);
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' fill='%23000000' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 240.835 240.835' style='enable-background:new 0 0 240.835 240.835;' xml:space='preserve'%3E%3Cg%3E%3Cpath id='Expand_Less' d='M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155 c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155 L129.007,57.819z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right 1rem center;
+	outline: none;
+	background-size: 30px;
+	margin-top: 20px;
+}
+
+.feature__link-active {
+	/* margin-bottom: 14px; */
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' fill='%23000000' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='451.847px' height='451.847px' viewBox='0 0 451.847 451.847' style='enable-background:new 0 0 451.847 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.feature-item-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 1rem;
+}
+
+.feature-item__title {
+	font-size: 20px;
+}
+
+.card-overlay {
+	position: absolute;
+	/* inset: 0; */
+	top: 0;
+	left: 0;
+	bottom: 20%;
+	background: rgba(248, 187, 106, 0.95);
+	color: #000;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem;
+	text-align: center;
+}
+
+.overlay-content {
+	overflow-y: auto;
+}
+.card-overlay-active {
+	display: flex;
+	animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @media (max-width: 1024px) {
@@ -459,6 +529,8 @@ body {
 	border-radius: 6px;
 }
 
+/* form */
+
 .feedback {
 	position: relative;
 }
@@ -585,22 +657,28 @@ body {
 	}
 }
 
-/* modal */
+/* modal-form */
 
 .modal {
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.modal-active {
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .overlay {
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	inset: 0;
 	background: rgba(0, 0, 0, 0.5);
 	width: 100%;
 	height: 100%;
@@ -608,18 +686,23 @@ body {
 }
 
 .modal-wrapper {
-	position: fixed;
-	top: 50%;
-	left: 50%;
+	position: relative;
 	z-index: 9;
-	max-width: 90%;
+	max-width: 85%;
 	width: 100%;
-	/* height: 545px; */
-	max-height: 100%;
-	transform: translate(-50%, -50%);
-	background-color: white;
-	padding: 71px 57px;
-	border: 1px solid white;
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 8px;
+	transform: scale(0.8);
+	opacity: 0;
+	transition:
+		transform 0.3s ease,
+		opacity 0.3s ease;
+}
+
+.modal-active .modal-wrapper {
+	transform: scale(1);
+	opacity: 1;
 }
 
 .modal__close {

@@ -3,8 +3,6 @@
 const navBtn = document.querySelectorAll('.nav-link');
 const sectionView = document.querySelectorAll('.section-view');
 
-console.log(sectionView);
-
 const changeContent = (array, value) => {
 	array.forEach((elem) => {
 		if (elem.dataset.tabsField === value) {
