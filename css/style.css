@@ -16,7 +16,7 @@ body {
 .container {
 	max-width: 870px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 auto;	
 }
 
 .accent {
@@ -33,6 +33,14 @@ body {
 
 .hidden {
 	display: none;
+}
+
+.scroll-to-top__link {
+	text-decoration: none;
+	position: fixed;
+	right: 20px;
+	top: calc(100dvh - 70px);
+	font-size: 30px;	
 }
 
 @media (max-width: 768px) {
@@ -102,6 +110,7 @@ body {
 		position: fixed;
 		top: 60px;
 		right: 20px;
+		z-index: 3;
 	}
 
 	.nav-list {
@@ -109,6 +118,10 @@ body {
 		align-items: end;
 		background-color: antiquewhite;
 		padding: 20px;
+	}
+
+	.scroll-to-top__link {
+		right: 0;
 	}
 }
 
@@ -168,6 +181,11 @@ body {
 	font-weight: 700;
 	color: var(--color-dark);
 	border-bottom: 2px solid var(--color-brand);
+}
+
+.timer-block {
+	text-align: center;
+	font-size: 24px;
 }
 
 @media (max-width: 900px) {
@@ -425,7 +443,7 @@ body {
 	.developer {
 		padding-inline: 1rem;
 		flex-direction: column-reverse;
-		padding-block: 40px;
+		padding-block: 1rem;
 	}
 
 	.developer-title,

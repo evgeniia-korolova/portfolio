@@ -23,6 +23,8 @@
 		<script src="./js/modal.js" defer></script>
 		<script src="./js/menu.js" defer></script>
 		<script src="./js/accordion.js" defer></script>
+		<script src="./js/timer.js" defer></script>
+		<script src="./js/scroll.js" defer></script>
 		<script src="./js/index.js" defer></script>
 	</head>
 	<body>
@@ -75,7 +77,7 @@
 
 		<main>
 			<!-- ./header -->
-			<section class="section-view" data-tabs-field="main">
+			<section class="section-view promo-section" data-tabs-field="main">
 				<div class="container promo">
 					<img
 						class="promo-avatar"
@@ -147,12 +149,13 @@
 						</div>
 					</div>
 				</div>
+				<div class="timer-block"></div>
 			</section>
 			<!-- /.promo -->
 
 			<section
 				class="portfolio section-view hidden"
-				data-tabs-field="projects"
+				data-tabs-field="projects" id="projects"
 			>
 				<div class="container portfolio-wrapper">
 					<h2 class="section-heading accent">Last Projects</h2>
@@ -288,12 +291,14 @@
 						</div>
 					</div>
 				</div>
+				<a href="#projects" class="scroll-to-top__link">⬆️</a>
 			</section>
 			<!-- /.portfolio -->
 
 			<section
 				class="section-view hidden"
 				data-tabs-field="developer"
+				id="developer"
 			>
 				<div class="container developer">
 					<img
@@ -346,6 +351,7 @@
 						<li class="tags-item">Git</li>
 					</ul>
 				</div>
+				<a href="#developer" class="scroll-to-top__link">⬆️</a>
 			</section>
 			<!-- /.developer container -->
 
@@ -625,5 +631,6 @@
 			</section>
 			<!-- /.feedback container -->
 		</main>
+		<script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest"></script>
 	</body>
 </html>

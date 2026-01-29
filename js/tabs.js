@@ -15,8 +15,7 @@ const changeContent = (array, value) => {
 
 navBtn.forEach((btn) => {
 	btn.addEventListener('click', (event) => {
-		const tabValue = btn.dataset.tabsHandler;
-		console.log(tabValue);
+		const tabValue = btn.dataset.tabsHandler;		
 
 		changeContent(sectionView, tabValue);
 
