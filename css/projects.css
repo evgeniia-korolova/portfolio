@@ -1,0 +1,15 @@
+.projects_tabs {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding-block: 1rem;
+}
+
+.projects_tabs__item {   
+    padding-block: 0.5rem;
+    cursor: pointer;
+}
+
+.active-project {    
+    border-bottom: 0.4rem solid #0089cd;
+}

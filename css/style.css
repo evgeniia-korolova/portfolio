@@ -13,6 +13,10 @@ body {
 	box-sizing: border-box;
 }
 
+body {
+	min-height: 100dvh;
+}
+
 .container {
 	max-width: 870px;
 	width: 100%;
@@ -39,8 +43,17 @@ body {
 	text-decoration: none;
 	position: fixed;
 	right: 20px;
-	top: calc(100dvh - 70px);
-	font-size: 30px;	
+	/* top: calc(100dvh - 10px); */
+	bottom: 20px;
+	font-size: 30px;
+	opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;	
+}
+
+.scroll-to-top__link.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 @media (max-width: 768px) {
@@ -125,6 +138,15 @@ body {
 	}
 }
 
+main {
+	min-height: calc(100dvh - 72px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
 /* promo */
 
 .promo {
@@ -132,7 +154,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	gap: 28px;
-	padding-bottom: 70px;
+	padding-bottom: 70px;	
 }
 
 .promo-strong {
@@ -253,6 +275,7 @@ body {
 
 .card-info {
 	padding: 1rem;
+	padding-bottom: 0;
 	flex: 1;
 }
 
@@ -318,7 +341,7 @@ body {
 	background-size: contain;
 	background-position: right 1rem center;
 	outline: none;
-	background-size: 30px;
+	background-size: 20px;
 	margin-top: 20px;
 }
 

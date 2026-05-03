@@ -1,27 +1,27 @@
 export const scroll = () => {
-  const scrollToTopLinks = document.querySelectorAll('.scroll-to-top__link');
+  const scrollBtn = document.querySelector('.scroll-to-top__link');
+  if (!scrollBtn) return;
 
-  scrollToTopLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
+  const checkHeight = () => {
+    const fullHeight = document.documentElement.scrollHeight;
+    const screenHeight = window.innerHeight;
 
-      const id = link.getAttribute('href').substring(1);
+    if (fullHeight > screenHeight && window.scrollY > 100) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
+  };
 
-      const section = document.getElementById(id);
-
-      if (section) {
-        // section.scrollIntoView({
-        //   block: 'start',
-        //   behavior: 'smooth'
-        // })
-        seamless.scrollIntoView(section, {
-          behavior: 'smooth',
-          block: 'start',
-          inline: 'center',
-        });
-      }
-    });
+  scrollBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  window.addEventListener('scroll', checkHeight);
+  window.addEventListener('resize', checkHeight);
+
+  return checkHeight;
 };
 
 export default scroll;
