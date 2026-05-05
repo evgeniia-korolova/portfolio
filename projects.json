@@ -1,0 +1,172 @@
+[
+    {
+        "id": "hangman",
+        "category": "Angular",
+        "title": "Ng-Hangman",
+        "image": "./images/projects/hangman.jpg",
+        "tags": [
+            "Angular",
+            "TS",
+            "RxJs",
+            "Signals",
+            "SCSS",
+            "Transloco"
+        ],
+        "description": "Hangman game, features - statistics for authorized person, signals, focus management, two languages availiable.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/ng-hangman",
+            "demo": "https://evgeniia-korolova.github.io/ng-hangman/"
+        }
+    },
+    {
+        "id": "authors-books",
+        "category": "Angular",
+        "title": "Authors-Books",
+        "image": "./images/projects/books.jpg",
+        "tags": [
+            "Angular",
+            "TS",
+            "RxJs",
+            "Signal Store",
+            "Angular Material",
+            "Tailwind"
+        ],
+        "description": "The application features - category sorting, product name search, favorites management, a shopping cart, and a smooth checkout flow — all backed by Angular Signal Store for modern, reactive state management.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/authors-books-app",
+            "demo": "https://authors-and-books-app.netlify.app/"
+        }
+    },
+    {
+        "id": "movie-db",
+        "category": "Angular",
+        "title": "Movie-DB",
+        "image": "./images/projects/movie-ng.jpg",
+        "tags": [
+            "Angular",
+            "TS",
+            "RxJs",
+            "NgRx",
+            "signals",
+            "SCSS"
+        ],
+        "description": "Group project. The application features category sorting, films search, favorites management, and a smooth checkout flow.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/RS-Clone",
+            "demo": "https://evgeniia-korolova.github.io/ng-ecommerce/products/all"
+        }
+    },
+    {
+        "id": "films-collection",
+        "category": "Angular",
+        "title": "Films Collection",
+        "image": "./images/projects/films-collection.jpg",
+        "tags": [
+            "Angular",
+            "TS",
+            "Signals",
+            "SCSS"            
+        ],
+        "description": "The application features: only signals, film name search, favorites management, light/dark mode.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/films-collection",
+            "demo": "https://evgeniia-korolova.github.io/films-collection/"
+        }
+    },
+    {
+        "id": "dashboard",
+        "category": "Angular",
+        "title": "Dashboard",
+        "image": "./images/projects/dashboard.jpg",
+        "tags": [
+            "Angular",
+            "TS",
+            "RxJs",
+            "Signal Store",
+            "Angular Material",
+            "Tailwind"
+        ],
+        "description": "This project showcases advanced UI work in Angular, combining Angular Material with TailwindCSS for flexible component styling and a cohesive design system. It features a fully responsive navigation menu that adapts between a burger icon and a sidebar layout depending on screen size. Interactive drag‑and‑drop functionality was implemented. Additionally, the application leverages form-builder to create user‑friendly forms.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/ng-dashboard",
+            "demo": "https://evgeniia-korolova.github.io/ng-dashboard/dashboard"
+        }
+    },    
+    {
+        "id": "multy-step-form",
+        "category": "Vanilla JS",
+        "title": "Multy-Step-Form",
+        "image": "./images/projects/multi-step-form.jpg",
+        "tags": [
+            "Vanilla JS",
+            "CSS"
+        ],
+        "description": "Two-pages app with sorting gifts by category.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/Multi-step-form",
+            "demo": "https://evgeniia-korolova.github.io/Multi-step-form/"
+        }
+    },
+    {
+        "id": "christmas-shop",
+        "category": "Vanilla JS",
+        "title": "Chrismas-Shop",
+        "image": "./images/projects/christmas.jpg",
+        "tags": [
+            "Vanilla JS",
+            "CSS"            
+        ],
+        "description": "Two-pages app with sorting gifts by category.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/christmas-shop",
+            "demo": "https://evgeniia-korolova.github.io/christmas-shop/"
+        }
+    },
+    {
+        "id": "library",
+        "category": "Vanilla JS",
+        "title": "Library",
+        "image": "./images/projects/library.jpg",
+        "tags": [
+            "JS",
+            "CSS"            
+        ],
+        "description": "The application features - category sorting, smooth checkout flow.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/library",
+            "demo": "https://evgeniia-korolova.github.io/library/"
+        }
+    },
+    {
+        "id": "van-life",
+        "category": "React",
+        "title": "Van-Life",
+        "image": "./images/projects/van-life.jpg",
+        "tags": [
+            "React",
+            "JS"
+        ],
+        "description": "This project showcases advanced UI work in Angular, combining Angular Material with TailwindCSS for flexible component styling and a cohesive design system.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/van-life",
+            "demo": "https://evgeniia-korolova.github.io/van-life/"
+        }
+    },
+    {
+        "id": "todo",
+        "category": "React",
+        "title": "To Do",
+        "image": "./images/projects/todo-react.jpg",
+        "tags": [
+            "React",
+            "JS",
+            "Redux-toolkit",
+            "Styled-components"
+        ],
+        "description": "This project showcases advanced UI work in Angular, combining Angular Material with TailwindCSS for flexible component styling and a cohesive design system.",
+        "links": {
+            "code": "https://github.com/evgeniia-korolova/todo-react-vite",
+            "demo": "https://evgeniia-korolova.github.io/todo-react-vite/"
+        }
+    }
+]
