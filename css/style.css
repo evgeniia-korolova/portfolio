@@ -18,9 +18,13 @@ body {
 }
 
 .container {
-	max-width: 870px;
+	max-width: 1440px;
 	width: 100%;
 	margin: 0 auto;	
+}
+
+.section-view {
+	width: 100%;
 }
 
 .accent {
@@ -251,47 +255,6 @@ main {
 	}
 }
 
-/* cards */
-
-.cards {
-	display: grid;
-	grid-auto-flow: row;
-	gap: 1.5rem;
-	grid-template-columns: repeat(3, 1fr);
-}
-
-.card {
-	display: flex;
-	flex-direction: column;
-	background: #fcf9f5;
-	position: relative;
-	overflow: hidden;
-}
-
-.card-image {
-	width: 100%;
-	object-fit: cover;
-}
-
-.card-info {
-	padding: 1rem;
-	padding-bottom: 0;
-	flex: 1;
-}
-
-.card-title {
-	font-size: 24px;
-	line-height: 125%;
-	letter-spacing: -0.02em;
-	font-weight: 700;
-	margin-bottom: 32px;
-}
-
-.card-description {
-	font-size: 16px;
-	line-height: 150%;
-	font-weight: 400;
-}
 
 .tags {
 	list-style: none;
