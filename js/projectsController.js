@@ -14,4 +14,9 @@ export const handleProjectChange = (category) => {
     const filtered = localData.filter(item => item.category === category);
     renderProjects(filtered, '.cards');
     accordion();
+
+    const firstCardButton = document.querySelector('.cards .feature__link');
+    if (firstCardButton) {
+        firstCardButton.focus();
+    }
 };
