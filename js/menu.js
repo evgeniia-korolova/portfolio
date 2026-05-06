@@ -2,27 +2,22 @@ const menu = () => {
   const burger = document.querySelector('.humburger-menu');
   const burgerIcon = document.querySelector('.ham');
   const menuItem = document.querySelector('.menu');
-  const menuLinks = document.querySelectorAll('.nav-item');
+  const menuLinks = document.querySelectorAll('.nav-link'); 
 
-  const toggleScroll = (isMenuOpen) => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+  const toggleMenu = (forceClose = false) => {
+    const isOpening = forceClose ? false : !menuItem.classList.contains('menu-active');
+    
+    menuItem.classList.toggle('menu-active', isOpening);
+    burgerIcon.classList.toggle('active-ham', isOpening);
+    burger.setAttribute('aria-expanded', isOpening);    
+    
+    document.body.style.overflow = isOpening ? 'hidden' : '';
   };
 
-  burger.addEventListener('click', () => {
-    menuItem.classList.toggle('menu-active');
-    burgerIcon.classList.toggle('active-ham');
-    const expanded = burger.getAttribute('aria-expanded') === 'true' || false;
-    burger.setAttribute('aria-expanded', !expanded);
-    const isOpen = menuItem.classList.contains('menu-active');
-    toggleScroll(isOpen);
-  });
+  burger.addEventListener('click', () => toggleMenu());  
 
   menuLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      menuItem.classList.remove('menu-active');
-      burgerIcon.classList.remove('active-ham');
-      toggleScroll(false);
-    });
+    link.addEventListener('click', () => toggleMenu(true));
   });
 
   document.addEventListener('click', (event) => {
@@ -32,11 +27,8 @@ const menu = () => {
         event.target.closest('.humburger-menu') ||
         event.target.closest('#theme-toggle')
       )
-    ) {
-      menuItem.classList.remove('menu-active');
-      burgerIcon.classList.remove('active-ham');
-      burger.setAttribute('aria-expanded', 'false');
-      toggleScroll(false);
+    ) {      
+      toggleMenu(true);
     }
   });
 };

@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  min-height: calc(100dvh - 72px);
+  min-height: calc(100dvh - 82px);
   display: flex;
   flex-direction: column;
 }
@@ -30,7 +30,7 @@ main {
 
 .section-view {
   width: 100%;
-  min-height: calc(100dvh - 72px);
+  min-height: calc(100dvh - 82px);
 }
 
 .accent {
@@ -165,10 +165,7 @@ main {
   .header {
     padding-block: 0;
   }
-
-  .navbar {
-    padding-block: 1rem;
-  }
+ 
   .promo {
     flex-direction: column;
     justify-content: center;
