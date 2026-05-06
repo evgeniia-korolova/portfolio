@@ -8,6 +8,7 @@ import tabsTwo from "./js/tabs-two.js";
 import { loadProjects } from "./js/projectsController.js";
 import { handleProjectChange } from "./js/projectsController.js";
 import { handlePageChange } from "./js/pageController.js";
+import toggleTheme from "./js/toggle-theme.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -27,4 +28,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }); 
 
     loadProjects();
+
+    toggleTheme();
 })
