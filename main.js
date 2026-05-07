@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form();
     // accordion();
     // tabsTwo(); 
-    tabs('.nav-list', '.nav-link', 'active', (id) => {
+    tabs('.nav-list', '.nav-link', 'active__nav-link', (id) => {
         handlePageChange(id); 
     });  
     handlePageChange('promo');

@@ -1,0 +1,169 @@
+/* promo */
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.75rem;    
+    min-height: calc(100dvh - 82px);
+  }
+  
+  .promo-strong {
+    display: block;
+    font-size: 3rem;
+    line-height: 125%;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+  
+  .promo-heading {
+    font-size: 1.5rem;
+    line-height: 135%;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+
+  .promo-text {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  
+  .promo-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .soc1al-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }  
+  
+  .soc1al-link {
+    display: inline-block;
+    padding: 8px;
+    transition: transform 2s ease-in-out;
+  }
+
+  .soc1al-logo {
+    transform: scale(1);
+  }
+
+
+  /* .soc1al-logo {    
+    filter: invert(48%) sepia(89%) saturate(1500%) hue-rotate(15deg) brightness(95%) contrast(105%);
+    transition: filter 0.3s ease;
+} */
+
+.soc1al-link:hover .soc1al-logo {    
+    /* filter: invert(55%) sepia(95%) saturate(2000%) hue-rotate(20deg) brightness(105%) contrast(110%); */
+    transform: scale(1.1);
+}
+  
+  .cv-download {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--text-main);
+    border-bottom: 2px solid var(--color-brand);
+  }
+
+  .download-icon {
+    margin-right: 0.8rem;;
+  }
+  
+  .timer-block {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .promo-stack-text {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: 'Monaco', 'Consolas', monospace; /* "Кодинговый" шрифт */
+    font-size: 1.1rem;
+    color: var(--color-brand);
+}
+
+.stack-item {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: stackFadeIn 0.6s ease forwards;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+.stack-item:nth-child(1) { animation-delay: 0.5s; }
+.stack-item:nth-child(2) { animation-delay: 0.8s; }
+.stack-item:nth-child(3) { animation-delay: 1.1s; }
+.stack-item:nth-child(4) { animation-delay: 1.4s; }
+
+@keyframes stackFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.stack-item:last-child::after {
+    content: '_';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+  
+  @media (max-width: 900px) {
+    .promo {
+      padding-block: 1.5rem;
+      padding-inline: 1rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .promo-strong {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .promo-heading {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      padding-block: 0;
+    }
+   
+    .promo {
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.6rem;
+      padding-top: 0;
+    }
+  
+    .promo-wrapper {
+      align-items: center;
+    }
+  
+    .promo-heading,
+    .promo-strong {
+      text-align: center;
+    }
+  }

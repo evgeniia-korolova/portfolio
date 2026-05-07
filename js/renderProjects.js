@@ -37,13 +37,13 @@ const renderProjects = (data, containerSelector) => {
                         <a href="${
                           project.links.code
                         }" class="project-link" target="_blank">
-                            <img src="./images/icons/code.svg" alt="code-icon" class="project-link-icon" />
+                            <img src="./assets/icons/code.svg" alt="code-icon" class="project-link-icon" />
                             <span class="project-link-text">Code</span>
                         </a>
                         <a href="${
                           project.links.demo
                         }" class="project-link" target="_blank">
-                            <img src="./images/icons/demo.svg" alt="demo-svg" class="project-link-icon" />
+                            <img src="./assets/icons/demo.svg" alt="demo-svg" class="project-link-icon" />
                             <span class="project-link-text">Demo</span>
                         </a>
                     </div>

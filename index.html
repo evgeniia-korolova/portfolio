@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evgeniia Korolova - Front-end Developer</title>
     <link rel="stylesheet" href="./css/normalize.css" />
-	<link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/promo.css" />
     <link rel="stylesheet" href="./css/projects.css" />
     <link rel="stylesheet" href="./css/animation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +25,9 @@
         <nav class="menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#" class="nav-link active__nav-link" data-target="promo">Main</a>
+              <a href="#" class="nav-link active__nav-link" data-target="promo"
+                >Main</a
+              >
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link" data-target="projects">Projects</a>
@@ -45,21 +48,19 @@
           aria-label="Toggle dark/light theme"
         ></button>
 
-
         <button class="humburger-menu" aria-label="Burger menu">
-			<svg class="ham hamRotate" viewBox="0 0 100 100" width="50">
-				<path
-					  class="line top"
-					  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-				<path
-					  class="line middle"
-					  d="m 30,50 h 40" />
-				<path
-					  class="line bottom"
-					  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-			  </svg>
-		</button>
-
+          <svg class="ham hamRotate" viewBox="0 0 100 100" width="50">
+            <path
+              class="line top"
+              d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+            />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path
+              class="line bottom"
+              d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+            />
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -78,9 +79,14 @@
             <h1 class="promo-heading">
               <span class="accent">I am Frontend Developer</span>
               <br />
-              My name is Evgeniia Korolova, I transform concepts into beautiful,
-              functional websites that inspire and engage.
+              My name is Evgeniia Korolova.
             </h1>
+            <p class="promo-text">
+              Specializing in building robust **Angular** applications and
+              enterprise-level **CRM systems**. Focused on creating scalable,
+              high-performance solutions with clean logic.
+            </p>
+            <p class="promo-text">Transform concepts into beautiful, functional websites that inspire and engage.</p>
             <div class="promo-links">
               <ul class="soc1al-list">
                 <li class="soc1al-item">
@@ -91,7 +97,7 @@
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="./images/icons/linkedin.svg"
+                      src="./assets/icons/linkedin.svg"
                       alt="linkedin-icon"
                       class="soc1al-logo"
                     />
@@ -105,7 +111,7 @@
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="./images/icons/github.svg"
+                      src="./assets/icons/github.svg"
                       alt="github-icon"
                       class="soc1al-logo"
                     />
@@ -119,22 +125,32 @@
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="./images/icons/telegram.svg"
+                      src="./assets/icons/telegram.svg"
                       alt="telegram-icon"
                       class="soc1al-logo"
                     />
                   </a>
                 </li>
               </ul>
-              <a href="#" class="cv-download" download>
+
+           
+
+              <a href="./assets/cv/cv Korolova Evgeniia FrontEnd(Angular)2026.pdf" class="cv-download" download>
                 <img
-                  src="./images/icons/download.svg"
+                  src="./assets/icons/download.svg"
                   alt="download-icon"
                   class="download-icon"
                 />
                 <span class="sv-text">Download CV</span>
               </a>
             </div>
+
+            <div class="promo-stack-text">
+              <span class="stack-item">Angular</span>
+              <span class="stack-item">Angular Material</span>
+              <span class="stack-item">TypeScript</span>
+              <span class="stack-item">Tailwind</span>
+          </div>
           </div>
         </div>
       </section>
@@ -146,41 +162,41 @@
         id="projects"
       >
         <div class="container portfolio-wrapper">
-          <h2 class="section-heading accent">Last Projects</h2>          
-            <ul
-              class="projects_tabs"
-              role="tablist"
-              aria-label="Project Categories"
+          <h2 class="section-heading accent">Last Projects</h2>
+          <ul
+            class="projects_tabs"
+            role="tablist"
+            aria-label="Project Categories"
+          >
+            <li
+              class="projects_tabs__item active-project"
+              data-category="Vanilla JS"
+              role="tab"
+              aria-selected="true"
+              tabindex="0"
             >
-              <li
-                class="projects_tabs__item active-project"
-                data-category="Vanilla JS"
-                role="tab"
-                aria-selected="true"
-                tabindex="0"
-              >
-                Vanilla JS
-              </li>
-              <li
-                class="projects_tabs__item"
-                data-category="Angular"
-                role="tab"
-                aria-selected="false"
-                tabindex="0"
-              >
-                Angular
-              </li>
-              <li
-                class="projects_tabs__item"
-                data-category="React"
-                role="tab"
-                aria-selected="false"
-                tabindex="0"
-              >
-                React
-              </li>
-            </ul>
-          
+              Vanilla JS
+            </li>
+            <li
+              class="projects_tabs__item"
+              data-category="Angular"
+              role="tab"
+              aria-selected="false"
+              tabindex="0"
+            >
+              Angular
+            </li>
+            <li
+              class="projects_tabs__item"
+              data-category="React"
+              role="tab"
+              aria-selected="false"
+              tabindex="0"
+            >
+              React
+            </li>
+          </ul>
+
           <div class="cards"></div>
         </div>
       </section>
@@ -286,11 +302,11 @@
 
                   <button type="submit" class="cv-download submit-btn" download>
                     <img
-                      src="./images/icons/send.svg"
+                      src="./assets/icons/send.svg"
                       alt="send-icon"
                       class="download-icon"
                     />
-                    <span class="sv-text">Send</span>
+                    <span class="send-text">Send</span>
                   </button>
                 </form>
               </div>

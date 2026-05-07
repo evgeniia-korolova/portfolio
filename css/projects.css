@@ -2,12 +2,14 @@
 
 .portfolio-wrapper {
 	padding-block: 2rem;
+	background: var(--bg-primary);
 }
 
 .cards {
 	display: grid;	
 	gap: 1.5rem;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	
 }
 
 .card {
@@ -17,6 +19,8 @@
 	position: relative;
 	overflow: hidden;
     border-radius: 8px;
+	background: var(--bg-secondary);
+	padding: 0.3rem;
 }
 
 .card-image {
@@ -25,6 +29,7 @@
     aspect-ratio: 4/3;
     transform: scale(1);
     transition: all 1s;
+	border-radius: 8px;
 }
 
 .card-image:hover {
@@ -72,7 +77,8 @@
 
 .image-wrapper {
     width: 100%;
-    overflow: hidden;    
+    overflow: hidden;
+	border-radius: 8px;    
 }
 
 .projects_tabs__item:focus-visible {

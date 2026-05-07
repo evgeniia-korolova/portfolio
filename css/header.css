@@ -1,5 +1,6 @@
 .header {
   background: var(--bg-secondary);
+  height: 82px;
 }
 
 .navbar {
@@ -40,6 +41,7 @@
   padding: 0;
   outline: none;
   cursor: pointer;
+  display: none;
 }
 
 .ham {

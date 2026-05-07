@@ -1,3 +1,5 @@
+
+
 html {
   scrollbar-gutter: stable;
 }
@@ -13,6 +15,7 @@ body {
   background: var(--bg-primary);
   color: var(--text-main);
   font-family: 'Inter', sans-serif;
+  transition: background 2s, color 2s;
 }
 
 main {
@@ -79,109 +82,7 @@ main {
   align-items: center;
 }
 
-/* promo */
 
-.promo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.75rem;
-  padding-bottom: 70px;
-  min-height: calc(100dvh - 72px);
-}
-
-.promo-strong {
-  display: block;
-  font-size: 3rem;
-  line-height: 125%;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-}
-
-.promo-heading {
-  font-size: 1.5rem;
-  line-height: 135%;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 2rem;
-}
-
-.promo-links {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.soc1al-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.soc1al-link {
-  display: inline-block;
-  padding: 8px;
-}
-
-.cv-download {
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  text-decoration: none;
-  font-size: 1rem;
-  line-height: 150%;
-  font-weight: 700;
-  color: var(--text-main);
-  border-bottom: 2px solid var(--color-brand);
-}
-
-.timer-block {
-  text-align: center;
-  font-size: 24px;
-}
-
-@media (max-width: 900px) {
-  .promo,
-  .navbar {
-    padding-block: 1.5rem;
-    padding-inline: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  .promo-strong {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .promo-heading {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    padding-block: 0;
-  }
- 
-  .promo {
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    padding-top: 0;
-  }
-
-  .promo-wrapper {
-    align-items: center;
-  }
-
-  .promo-heading,
-  .promo-strong {
-    text-align: center;
-  }
-}
 
 .tags {
   list-style: none;
@@ -227,7 +128,7 @@ main {
   background-color: transparent;
   border: none;
   width: 100%;
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' fill='%23000000' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 240.835 240.835' style='enable-background:new 0 0 240.835 240.835;' xml:space='preserve'%3E%3Cg%3E%3Cpath id='Expand_Less' d='M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155 c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155 L129.007,57.819z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' fill='%23bf7506' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 240.835 240.835' style='enable-background:new 0 0 240.835 240.835;' xml:space='preserve'%3E%3Cg%3E%3Cpath id='Expand_Less' d='M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155 c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155 L129.007,57.819z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 1rem center;
@@ -238,7 +139,7 @@ main {
 
 .feature__link-active {
   /* margin-bottom: 14px; */
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' fill='%23000000' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='451.847px' height='451.847px' viewBox='0 0 451.847 451.847' style='enable-background:new 0 0 451.847 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' fill='%23bf7506' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='451.847px' height='451.847px' viewBox='0 0 451.847 451.847' style='enable-background:new 0 0 451.847 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
 .feature-item-wrap {
@@ -246,6 +147,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding-inline: 1rem;
+  cursor: pointer;
 }
 
 .feature-item__title {
@@ -257,8 +159,8 @@ main {
   /* inset: 0; */
   top: 0;
   left: 0;
-  bottom: 20%;
-  background: rgba(248, 187, 106, 0.95);
+  bottom: 25%;
+  background: var(--color-brand);
   color: #000;
   display: none;
   justify-content: center;
@@ -316,7 +218,7 @@ main {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
-  min-height: calc(100dvh - 72px);
+  min-height: calc(100dvh - 82px);
   margin: auto;
 }
 
@@ -417,11 +319,11 @@ main {
 }
 
 .contacts {
-  padding-block: 3rem;
+  padding-block: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: calc(100dvh - 72px);
+  min-height: calc(100dvh - 82px);
 }
 
 .contacts-subtitle {
@@ -465,7 +367,7 @@ main {
 }
 
 .contact-btn {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 1rem 2rem;
   background: var(--color-brand);
   color: #fff;
@@ -497,6 +399,7 @@ main {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
+  color: var(--text-dark);  
 }
 
 .feedback-form {
@@ -539,6 +442,10 @@ main {
   padding: 8px;
   align-self: flex-end;
   cursor: pointer;
+}
+
+ .send-text {
+  color: var(--text-dark);  
 }
 
 @media (max-width: 1024px) {
@@ -657,7 +564,7 @@ main {
   right: 0;
   border: none;
   background-color: transparent;
-  background-image: url('../images/icons/close.svg');
+  background-image: url('../assets/icons/close.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
